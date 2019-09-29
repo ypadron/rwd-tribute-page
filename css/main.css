@@ -1,13 +1,22 @@
 body  {
+  max-width: 100%;
+  font-size: 100%;
 }
 
 #main  {
-  background-color: papayawhip;
-  font-family: sans-serif;
+  background-color: moccasin;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
 }
 
+header > p {
+  text-align: center;
+  margin-top: 0;
+}
+
 #title  {
+  /* font-family: 'Source Code Pro', monospace; */
+  font-family: 'Merriweather Sans', sans-serif;
   text-align: center;
   margin: 0;
   padding: 1% 1% .5% 1%;
@@ -17,13 +26,12 @@ h2 {
   margin: 0;
   padding: .5% 1% 1% 1%;
   text-align: center;
-  font-weight: 525;
+  /* font-weight: 525; */
 }
 
 #img-div  {
   margin: 1%;
   background-color: snow;
-
 }
 
 #image  {
@@ -31,12 +39,12 @@ h2 {
   display: block;
   height: auto;
   margin: auto;
-  padding: 2% 1% .5%;
+  padding: 2% 0 .5%;
 }
 
 #img-caption {
   text-align: center;
-  font-size: 1vw;
+  font-size: .75em;
   margin: 0;
   padding-bottom: 1%;
 }
@@ -51,11 +59,11 @@ p   {
 
  h3 {
   text-align: center;
-  font-weight: 550;
+  /* font-weight: 550; */
 }
 
 #tribute-info {
-  width: 600px;
+  width: 40%;
   line-height: 1.2;
   margin: 0em auto;
   padding-bottom: 2em;
@@ -67,4 +75,42 @@ p   {
 
 li {
   padding-bottom: 1%;
+}
+
+@media screen and (min-width: 320px)  {
+
+  img-caption {
+    font-size:
+  }
+
+  #tribute-info {
+    width: 80%;
+    line-height: 1.2;
+    margin: 0em auto;
+    padding-bottom: 2em;
+  }
+
+  #tribute-div-quote  {
+    padding: .5%;
+  }
+}
+@media screen and (min-width: 600px)  {
+
+  #title  {
+    font-size: 2.75rem;
+  }
+}
+@media screen and (min-width: 950px)  {
+
+  #title  {
+    font-size: 3rem;
+  }
+
+  #img-div  {
+    margin: 1% 5%;
+  }
+
+  #tribute-info {
+    width: 50%;
+  }
 }
